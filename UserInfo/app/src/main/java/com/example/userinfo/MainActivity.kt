@@ -1,8 +1,8 @@
-package com.example.userprofile
+package com.example.userinfo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.userprofile.ui.main.UserProfileFragment
+import com.example.userinfo.ui.main.MainFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -11,8 +11,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.container, UserProfileFragment.newInstance())
-                .commitNow()
+                    .replace(R.id.container, MainFragment.newInstance())
+                    .commitNow()
         }
     }
 
