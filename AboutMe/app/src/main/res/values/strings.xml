@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AboutMe</string>
+    <string name="about_me">About me</string>
+    <string name="name">Juma Sam</string>
+    <string name="yellow_star">Yellow star</string>
+    <string name="bio">"Hi, Am Juma\n\n
+        Programmer | Sofware Developer |Mobile developer\n
+        I'd just say am a tech enthusiast\n
+        Am currently in my final year in campus an curious\n
+        of whatever is gonna happen to us when we get out.\n
+        Well,they do say good preparation saves the day\n
+        and to me that implies whatever i do now determines\n
+        whatever happens next.\n
+        Got proficiencies in a few a languages : Java, C,C++
+        \nI have also had experiences using Databases such as SQL\n
+        Of late my focus is into mobile development majorly\n
+        Android applications where I do native apps in java \n
+        and Kotlin. \n
+        Don't forget am available for hire but majorly remote\n
+        since am still in school\n
+        Reach me out on samjay0.254@gmail.com.
+        \nCheck out my github account Username:Samjay0
+"</string>
+    <string name="enter_nick_name">Enter your nick name</string>
+    <string name="done">Done</string>
+</resources>
