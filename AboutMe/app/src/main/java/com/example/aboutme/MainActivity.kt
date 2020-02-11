@@ -5,19 +5,20 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import android.widget.EditText
-import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import com.example.aboutme.databinding.ActivityMainBinding
-import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private val myName:MyName= MyName("Juma Sam")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
+
+        binding.myName=myName
+
         binding.doneBtn.setOnClickListener {
             addNickname(it)
         }
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun addNickname(view :View){
         binding.apply {
+//            myName?.nickname=nickNameEditText.text.toString()
             nickNameText.text=nickNameEditText.text
             invalidateAll()
             nickNameEditText.visibility=View.GONE
